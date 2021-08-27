@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link href="/css/tailwind.css" rel="stylesheet" />
+
+  <title>Hello, world!</title>
+</head>
+
+<body>
+  <div class="container mx-auto my-12">
+
+    <div class="grid grid-cols-12 gap-4">
+      <div class="col-start-3 col-span-8 text-center">
+        <h1 class="text-6xl pb-4">Alt Milk Comparison</h1>
+        <p class="text-2xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="grid grid-cols-12">
+
+    <div class="col-span-6 p-36 bg-green-100">
+      <div id="nutr-energy" class="chart-section my-60" data-topic="Energy" data-measure="kcal">
+        <h2 class="text-6xl font-light pb-4">Energy</h2>
+        <p class="text-2xl font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt
+          ut
+          labore et dolore
+          magna
+          aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis
+          aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+          sint
+          occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+      <hr>
+      <div id="nutr-fat" class="chart-section my-60" data-topic="Fat" data-measure="g">
+        <h2 class="text-6xl font-light pb-4">Fat</h2>
+        <p class="text-2xl font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt
+          ut
+          labore et dolore
+          magna
+          aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis
+          aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+          sint
+          occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+      <hr>
+      <div id="nutr-carbohydrates" class="chart-section my-60" data-topic="Carbohydrates" data-measure="g">
+        <h2 class="text-6xl font-light pb-4">Carbohydrates</h2>
+        <p class="text-2xl font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt
+          ut
+          labore et dolore
+          magna
+          aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis
+          aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+          sint
+          occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+    </div>
+
+    <div class="col-span-6 bg-gray-100">
+      <div class="p-36 sticky top-0">
+        <div class="mb-10 select-none">
+          <div class="inline-block mr-10">
+            <p class="text-gray-500 font-bold uppercase text-sm mb-1">Type</p>
+            <button
+              class="py-2 px-3 shadow-md no-underline rounded-full bg-green-300 text-white font-semibold text-sm hover:text-white hover:bg-green-400 focus:outline-none active:shadow-none mr-2"
+              data-filter="type" data-filter-item="Oat">Oat</button>
+            <button
+              class="py-2 px-3 shadow-md no-underline rounded-full bg-green-300 text-white font-semibold text-sm hover:text-white hover:bg-green-400 focus:outline-none active:shadow-none mr-2"
+              data-filter="type" data-filter-item="Soya">Soya</button>
+            <button
+              class="py-2 px-3 shadow-md no-underline rounded-full bg-green-300 text-white font-semibold text-sm hover:text-white hover:bg-green-400 focus:outline-none active:shadow-none mr-2"
+              data-filter="type" data-filter-item="Hazelnut">Hazelnut</button>
+            <button
+              class="py-2 px-3 shadow-md no-underline rounded-full bg-green-300 text-white font-semibold text-sm hover:text-white hover:bg-green-400 focus:outline-none active:shadow-none mr-2"
+              data-filter="type" data-filter-item="Almond">Almond</button>
+            <button
+              class="py-2 px-3 shadow-md no-underline rounded-full bg-green-300 text-white font-semibold text-sm hover:text-white hover:bg-green-400 focus:outline-none active:shadow-none mr-2"
+              data-filter="type" data-filter-item="Coconut">Coconut</button>
+          </div>
+          <div class="inline-block">
+            <p class="text-gray-500 font-bold uppercase text-sm mb-1">Brand</p>
+            <button
+              class="py-2 px-3 shadow-md no-underline rounded-full bg-green-300 text-white font-semibold text-sm hover:text-white hover:bg-green-400 focus:outline-none active:shadow-none mr-2"
+              data-filter="brand" data-filter-item="Oatly">Oatly</button>
+            <button
+              class="py-2 px-3 shadow-md no-underline rounded-full bg-green-300 text-white font-semibold text-sm hover:text-white hover:bg-green-400 focus:outline-none active:shadow-none mr-2"
+              data-filter="brand" data-filter-item="Alpro">Alpro</button>
+          </div>
+        </div>
+        <canvas id="myChart" width="400" height="400"></canvas>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+  <script type="text/javascript" src="/js/data.js"></script>
+  <script type="text/javascript" src="/js/charts.js"></script>
+  <script type="text/javascript" src="/js/page.js"></script>
+
+</body>
+
+</html>

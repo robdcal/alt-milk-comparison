@@ -1,0 +1,12 @@
+To Do
+- Add interactivity (filters) to chart
+- Add remaining oat drinks
+- Add other alt milks
+- Add remaining topic sections
+- Make ingredient naming consistent
+- Add summary table / heatmap
+- Add ingredients section
+- Improve overall styling
+- Add content to sections
+- Optimise for mobile experience
+- Resize images, put in S3 bucket, update URLs in data
