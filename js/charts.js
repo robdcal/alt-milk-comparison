@@ -96,7 +96,7 @@ let myChart = new Chart(ctx, {
         left: 0,
         right: 0,
         top: 0,
-        bottom: 60
+        bottom: 110
       }
     },
     scales: {
@@ -107,7 +107,14 @@ let myChart = new Chart(ctx, {
       }],
       xAxes: [{
         ticks: {
-          display: false //this will remove only the label
+          display: false, //this will remove only the label
+          autoSkip: false,
+          maxRotation: 90,
+          minRotation: 90,
+          padding: -220,
+        },
+        gridLines: {
+          display: false
         }
       }]
     },
