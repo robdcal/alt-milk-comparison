@@ -1,44 +1,64 @@
 let names = [];
-let brands = [];
 let chartData = []
 let chartTitle = ''
 let images = [];
-let measureText = ''
-let titleText = ''
-let workingData = []
+let workingData = data
+let currentTopic;
+let currentMeasure;
 
-data.forEach((obj, i) => {
-  names.push(obj.name);
-  brands.push(obj.brand);
+// event listener(s) to handle click events
+const filterButtons = document.querySelectorAll('#chart-filters button');
+filterButtons.forEach((obj, i) => {
+  obj.addEventListener('click', event => {
+    event.target.setAttribute('data-active', event.target.getAttribute('data-active') === 'true' ? 'false' : 'true');
+    filterItems()
+  });
 });
 
-const filterItems = () => {
+const filterItems = () => { // any time a filter changes
+
+  workingData = []
+  names = []
+
   // get active filters
-  // get array of all items (data)
-  // filter item array to match active filters and put in workingData array
+  const types = document.querySelectorAll('button[data-active="true"][data-filter="type"]')
+  let typesArr = []
+  types.forEach((obj, i) => {
+    typesArr.push(obj.dataset.filterItem);
+  });
+
+  const brands = document.querySelectorAll('button[data-active="true"][data-filter="brand"]')
+  let brandsArr = []
+  brands.forEach((obj, i) => {
+    brandsArr.push(obj.dataset.filterItem);
+  });
+
+  // filter data array to match active filters and put in workingData array
+  data.forEach((obj, i) => {
+    if (typesArr.includes(obj.type) && brandsArr.includes(obj.brand)) {
+      workingData.push(obj);
+      names.push(obj.name);
+    }
+  });
+
   // update chart data with filtered workingData
+  updateChartData()
+
 }
 
-const updateChartData = (target, measure) => {
+const updateChartData = () => {
 
   chartData = []
   images = []
-  measureText = measure
-  titleText = target
 
-  data.forEach((obj, i) => {
-    chartData.push(obj.nutrition[target]);
+  workingData.forEach((obj, i) => {
+    chartData.push(obj.nutrition[currentTopic]);
     images.push(obj.image);
   });
 
-  updateChart()
-
-}
-
-const updateChart = () => {
-
   myChart.data.datasets[0].data = chartData;
-  myChart.options.title.text = titleText + " (" + measureText + ")";
+  myChart.data.labels = names;
+  myChart.options.title.text = currentTopic + " (" + currentMeasure + ")";
   myChart.update();
 
 }
@@ -81,7 +101,10 @@ let myChart = new Chart(ctx, {
       display: true,
       text: 'Custom Chart Title',
       fontSize: 18
-    }
+    },
+    legend: {
+      display: false
+    },
   },
   plugins: [{
     afterDraw: chart => {
@@ -97,3 +120,5 @@ let myChart = new Chart(ctx, {
     }
   }],
 });
+
+filterItems()

@@ -1,12 +1,13 @@
 To Do
-- Add interactivity (filters) to chart
+- Make ingredient naming consistent
 - Add remaining oat drinks
 - Add other alt milks
 - Add remaining topic sections
-- Make ingredient naming consistent
-- Add summary table / heatmap
-- Add ingredients section
-- Improve overall styling
+- Add summary table / heatmap? or averages per brand and per type?
+- Add ingredients section (table with ticks, tooltip to learn about ingredient)
 - Add content to sections
-- Optimise for mobile experience
 - Resize images, put in S3 bucket, update URLs in data
+- Improve overall styling
+- Optimise for mobile experience
+- Add "How it's built" mode with annotations
+- Move data to database (e.g. Firebase)?
