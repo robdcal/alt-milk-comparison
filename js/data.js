@@ -136,7 +136,7 @@ const data = [{
         "Water": true,
         "Oats": true,
         "Rapeseed oil": true,
-        "Acidity regulator (dipotassium phosphate)": true,
+        "Dipotassium phosphate": true,
         "Calcium carbonate": true,
         "Salt": true,
         "Vitamin D2": true,
@@ -170,7 +170,7 @@ const data = [{
         "Water": true,
         "Oats": true,
         "Rapeseed oil": true,
-        "Acidity regulator (dipotassium phosphate)": true,
+        "Dipotassium phosphate": true,
         "Calcium carbonate": true,
         "Salt": true,
         "Vitamin D2": true,
@@ -203,7 +203,7 @@ const data = [{
     "ingredients": {
         "Water": true,
         "Oats": true,
-        "Acidity regulator (dipotassium phosphate)": true,
+        "Dipotassium phosphate": true,
         "Calcium carbonate": true,
         "Calcium phosphates": true,
         "Salt": true,
@@ -230,6 +230,66 @@ const data = [{
         "Iodine": 22.5 // µg
     }
 }, {
+    "name": "Oatly Oat Drink Chocolate Deluxe",
+    "brand": "Oatly",
+    "type": "Oat",
+    "chilled": true,
+    "url": "https://www.oatly.com/uk/products/oat-drink-chocolate-deluxe",
+    "image": "https://www.oatly.com/uploads/attachments/ck0qceyza07exiiqr5dxbmdkh-66518-chocolatedeluxe-uk-right-ip-gabletop-1000ml-v014.one-half.jpg",
+    "ingredients": {
+        "Water": true,
+        "Oats": true,
+        "Sugar": true,
+        "Rapeseed oil": true,
+        "Cocoa powder": true,
+        "Calcium carbonate": true,
+        "Calcium phosphates": true,
+        "Natural flavourings": true,
+        "Salt": true,
+        "Vitamin D2": true,
+        "Vitamin B12": true,
+        "Riboflavin": true,
+        "Potassium iodide": true
+    },
+    "nutrition": {
+        "Energy": 69, // kcal
+        "Fat": 2.5, // g
+        "of which saturated": 0.3, // g
+        "Carbohydrates": 9.7, // g
+        "of which sugars": 7.1, // g
+        "Fibre": 1.2, // g
+        "Protein": 1.3, // g
+        "Salt": 0.11, // g
+        "Vitamin D": 1.1, // µg
+        "Riboflavin": 0.21, // mg
+        "Vitamin B12": 0.38, // µg
+        "Calcium": 120, // mg
+        "Iodine": 22.5 // µg
+    }
+}, {
+    "name": "Oatly Oat Drink Organic Semi",
+    "brand": "Oatly",
+    "type": "Oat",
+    "chilled": true,
+    "url": "https://www.oatly.com/uk/products/oat-drink-organic-semi",
+    "image": "https://www.oatly.com/uploads/attachments/ckc4vvoq401vk1kgi0phxaes6-61798-oatdrink-organic-uk-right-ip-gabletop-1000ml-v021.one-half.jpg",
+    "ingredients": {
+        "Water": true,
+        "Oats": true,
+        "Rapeseed oil": true,
+        "Sea salt": true
+    },
+    "nutrition": {
+        "Energy": 46, // kcal
+        "Fat": 1.5, // g
+        "of which saturated": 0.2, // g
+        "Carbohydrates": 6.7, // g
+        "of which sugars": 4.1, // g
+        "Fibre": 0.8, // g
+        "Protein": 1.0, // g
+        "Salt": 0.10, // g
+    }
+}, {
     "name": "Alpro Oat Original",
     "brand": "Alpro",
     "type": "Oat",
@@ -241,9 +301,9 @@ const data = [{
         "Oats": true,
         "Soluble corn fibre": true,
         "Sunflower oil": true,
-        "Calcium (Tri-calcium phosphate)": true,
+        "Tri-calcium phosphate": true,
         "Sea salt": true,
-        "Stabiliser (Gellan gum)": true,
+        "Gellan gum": true,
         "Vitamin B2": true,
         "Vitamin B12": true,
         "Vitamin D2": true
@@ -276,7 +336,7 @@ const data = [{
         "Sunflower oil": true,
         "Calcium carbonate": true,
         "Sea salt": true,
-        "Stabiliser (Gellan gum)": true,
+        "Gellan gum": true,
         "Vitamin B2": true,
         "Vitamin B12": true,
         "Vitamin D2": true
@@ -308,11 +368,11 @@ const data = [{
         "Fat-reduced cocoa": true,
         "Chicory root fibre": true,
         "Sunflower oil": true,
-        "Calcium (Tri-calcium phosphate)": true,
+        "Tri-calcium phosphate": true,
         "Sea salt": true,
-        "Stabiliser (Gellan gum)": true,
-        "Stabiliser (Locust bean gum)": true,
-        "Acidity regulator (Potassium phosphates)": true,
+        "Gellan gum": true,
+        "Locust bean gum": true,
+        "Potassium phosphates": true,
         "Flavourings": true,
         "Vitamin B2": true,
         "Vitamin D2": true
@@ -342,9 +402,9 @@ const data = [{
         "Oats": true,
         "Chicory root fibre": true,
         "Sunflower oil": true,
-        "Calcium (Tri-calcium phosphate)": true,
+        "Tri-calcium phosphate": true,
         "Sea salt": true,
-        "Stabiliser (Gellan gum)": true,
+        "Gellan gum": true,
         "Vitamin D2": true,
         "Vitamin B12": true,
         "Vitamin B2": true,
@@ -375,9 +435,9 @@ const data = [{
         "Oats": true,
         "Chicory root fibre": true,
         "Sunflower oil": true,
-        "Calcium (Calcium carbonate)": true,
+        "Calcium carbonate": true,
         "Sea salt": true,
-        "Stabiliser (Gellan gum)": true,
+        "Gellan gum": true,
         "Vitamin D2": true,
         "Vitamin B12": true,
         "Vitamin B2": true,
@@ -395,5 +455,254 @@ const data = [{
         "Vitamin B2": 0.21, // mg
         "Vitamin B12": 0.38, // µg
         "Calcium": 120 // mg
+    }
+}, {
+    "name": "Alpro Almond Unroasted No Sugars",
+    "brand": "Alpro",
+    "type": "Almond",
+    "chilled": false,
+    "url": "https://www.alpro.com/uk/products/drinks/almond-drinks/almond-unroasted-no-sugars/",
+    "image": "https://images.ctfassets.net/s64jgdakkdiy/1BAbB1EmX5uTqfSuRzRpFk/f27d6f5e19a07682e8d1428bffac1ab1/webimage-54B1FB9E-BB45-488C-807490D2FD64AA71.png?w=105&h=300&q=50&fm=webp&fit=pad",
+    "ingredients": {
+        "Water": true,
+        "Almond": true,
+        "Tri-calcium phosphate": true,
+        "Sea salt": true,
+        "Locust bean gum": true,
+        "Gellan gum": true,
+        "Lecithins": true,
+        "Natural flavouring": true,
+        "Vitamin D2": true,
+        "Vitamin B12": true,
+        "Vitamin B2": true,
+        "Vitamin E": true,
+    },
+    "nutrition": {
+        "Energy": 13, // kcal
+        "Fat": 1.1, // g
+        "of which saturated": 0.1, // g
+        "Carbohydrates": 0, // g
+        "of which sugars": 0, // g
+        "Fibre": 0.2, // g
+        "Protein": 0.5, // g
+        "Salt": 0.14, // g
+        "Vitamin D": 0.75, // µg
+        "Vitamin B2": 0.21, // mg
+        "Vitamin E": 1.8, // mg
+        "Vitamin B12": 0.38, // µg
+        "Calcium": 120 // mg
+    }
+}, {
+    "name": "Alpro Almond Roasted No Sugars",
+    "brand": "Alpro",
+    "type": "Almond",
+    "chilled": false,
+    "url": "https://www.alpro.com/uk/products/drinks/almond-drinks/almond-roasted-no-sugars/",
+    "image": "https://images.ctfassets.net/s64jgdakkdiy/1v5msiQKq7zwbmviKK1Ae4/136dc62b28654ce2c0539b33e0102c84/webimage-2D7FA4A1-CCD0-42EE-85CF398CB623BB0B.png?w=105&h=300&q=50&fm=webp&fit=pad",
+    "ingredients": {
+        "Water": true,
+        "Almond": true,
+        "Tri-calcium phosphate": true,
+        "Sea salt": true,
+        "Locust bean gum": true,
+        "Gellan gum": true,
+        "Lecithins": true,
+        "Vitamin D2": true,
+        "Vitamin B12": true,
+        "Vitamin B2": true,
+        "Vitamin E": true,
+    },
+    "nutrition": {
+        "Energy": 13, // kcal
+        "Fat": 1.1, // g
+        "of which saturated": 0.1, // g
+        "Carbohydrates": 0, // g
+        "of which sugars": 0, // g
+        "Fibre": 0.3, // g
+        "Protein": 0.4, // g
+        "Salt": 0.14, // g
+        "Vitamin A": 0.4, // mg
+        "Vitamin D": 0.75, // µg
+        "Vitamin B2": 0.21, // mg
+        "Vitamin E": 1.8, // mg
+        "Vitamin B12": 0.38, // µg
+        "Calcium": 120 // mg
+    }
+}, {
+    "name": "Alpro Almond Original",
+    "brand": "Alpro",
+    "type": "Almond",
+    "chilled": false,
+    "url": "https://www.alpro.com/uk/products/drinks/almond-drinks/almond-original/",
+    "image": "https://images.ctfassets.net/s64jgdakkdiy/75zKlWS43WiuL6oQbrLaFv/fd6903b52855bc54deeb94b8c427229f/https___d2csxpduxe849s.cloudfront.net_media_5ECAE76B-174E-46A8-8B34E46B811761F5_6CEFFE0E-1696-4FD3-9C991F711944FF07_190A44CB.png?w=105&h=300&q=50&fm=webp&fit=pad",
+    "ingredients": {
+        "Water": true,
+        "Almond": true,
+        "Sugar": true,
+        "Tri-calcium phosphate": true,
+        "Sea salt": true,
+        "Locust bean gum": true,
+        "Gellan gum": true,
+        "Lecithins": true,
+        "Natural flavouring": true,
+        "Vitamin D2": true,
+        "Vitamin B12": true,
+        "Vitamin B2": true,
+        "Vitamin E": true,
+    },
+    "nutrition": {
+        "Energy": 22, // kcal
+        "Fat": 1.1, // g
+        "of which saturated": 0.1, // g
+        "Carbohydrates": 2.4, // g
+        "of which sugars": 2.4, // g
+        "Fibre": 0.4, // g
+        "Protein": 0.4, // g
+        "Salt": 0.14, // g
+        "Vitamin A": 0.4, // mg
+        "Vitamin D": 0.75, // µg
+        "Vitamin B2": 0.21, // mg
+        "Vitamin E": 1.8, // mg
+        "Vitamin B12": 0.38, // µg
+        "Calcium": 120 // mg
+    }
+}, {
+    "name": "Alpro Almond Original Chilled",
+    "brand": "Alpro",
+    "type": "Almond",
+    "chilled": true,
+    "url": "https://www.alpro.com/uk/products/drinks/almond-drinks/almond-original-chilled/",
+    "image": "https://images.ctfassets.net/s64jgdakkdiy/1KlJkJVONHoX04Ie4r6qz5/be9e0535ef4ad32c38750b15a0697da2/https___d2csxpduxe849s.cloudfront.net_media_5ECAE76B-174E-46A8-8B34E46B811761F5_5FCFB360-ADBD-4D3B-B0DC7121AF24D90B_5629EC24.png?w=90&h=300&q=50&fm=webp&fit=pad",
+    "ingredients": {
+        "Water": true,
+        "Almond": true,
+        "Sugar": true,
+        "Tri-calcium phosphate": true,
+        "Sea salt": true,
+        "Locust bean gum": true,
+        "Gellan gum": true,
+        "Lecithins": true,
+        "Natural flavouring": true,
+        "Vitamin D2": true,
+        "Vitamin B12": true,
+        "Vitamin B2": true,
+        "Vitamin E": true,
+    },
+    "nutrition": {
+        "Energy": 22, // kcal
+        "Fat": 1.1, // g
+        "of which saturated": 0.1, // g
+        "Carbohydrates": 2.4, // g
+        "of which sugars": 2.4, // g
+        "Fibre": 0.4, // g
+        "Protein": 0.4, // g
+        "Salt": 0.14, // g
+        "Vitamin A": 0.4, // mg
+        "Vitamin D": 0.75, // µg
+        "Vitamin B2": 0.21, // mg
+        "Vitamin E": 1.8, // mg
+        "Vitamin B12": 0.38, // µg
+        "Calcium": 120 // mg
+    }
+}, {
+    "name": "Alpro Caramelised Almond",
+    "brand": "Alpro",
+    "type": "Almond",
+    "chilled": false,
+    "url": "https://www.alpro.com/uk/products/drinks/almond-drinks/alpro-caramelised-almond-drink/",
+    "image": "https://images.ctfassets.net/s64jgdakkdiy/4DCfFWxDemG5Pv8W03plFK/4515d8c901c303a7ce0eb8c6b5253570/webimage-7A26FBE9-44CA-4B9D-8D1C796D49B5A437.png?w=95&h=300&q=50&fm=webp&fit=pad",
+    "ingredients": {
+        "Water": true,
+        "Caramelised almond": true,
+        "Sugar": true,
+        "Calcium carbonate": true,
+        "Sea salt": true,
+        "Locust bean gum": true,
+        "Gellan gum": true,
+        "Potassium phosphates": true,
+        "Flavouring": true,
+        "Vitamin B2": true,
+        "Vitamin B12": true,
+        "Vitamin E": true,
+        "Vitamin D2": true,
+    },
+    "nutrition": {
+        "Energy": 19, // kcal
+        "Fat": 0.8, // g
+        "of which saturated": 0.1, // g
+        "Carbohydrates": 2.5, // g
+        "of which sugars": 2.5, // g
+        "Fibre": 0.3, // g
+        "Protein": 0.3, // g
+        "Salt": 0.13, // g
+        "Vitamin D": 0.75, // µg
+        "Vitamin E": 1.8, // mg
+        "Vitamin B2": 0.21, // mg
+        "Vitamin B12": 0.38, // µg
+        "Calcium": 120 // mg
+    }
+}, {
+    "name": "Alpro Almond Dark Chocolate",
+    "brand": "Alpro",
+    "type": "Almond",
+    "chilled": false,
+    "url": "https://www.alpro.com/uk/products/drinks/almond-drinks/almond-dark-chocolate/",
+    "image": "https://images.ctfassets.net/s64jgdakkdiy/4V93eNZgGU9bjtfI8VTs9c/67d807d39f916e4373fea2c0feb88798/https___d2csxpduxe849s.cloudfront.net_media_5ECAE76B-174E-46A8-8B34E46B811761F5_F364E3D8-EE36-4ED5-8D494C75DDBBA947_webimage.png?w=105&h=300&q=50&fm=webp&fit=pad",
+    "ingredients": {
+        "Water": true,
+        "Sugar": true,
+        "Almond": true,
+        "Fat-reduced cocoa": true,
+        "Maltodextrin": true,
+        "Tri-calcium phosphate": true,
+        "Sea salt": true,
+        "Locust bean gum": true,
+        "Gellan gum": true,
+        "Natural flavouring": true,
+        "Lecithins": true,
+        "Vitamin B2": true,
+        "Vitamin E": true,
+        "Vitamin D2": true,
+    },
+    "nutrition": {
+        "Energy": 47, // kcal
+        "Fat": 1.3, // g
+        "of which saturated": 0.2, // g
+        "Carbohydrates": 7.7, // g
+        "of which sugars": 6.9, // g
+        "Fibre": 0.8, // g
+        "Protein": 0.8, // g
+        "Salt": 0.14, // g
+        "Vitamin D": 0.75, // µg
+        "Vitamin E": 1.8, // mg
+        "Vitamin B2": 0.21, // mg
+        "Calcium": 120 // mg
+    }
+}, {
+    "name": "Alpro Organic Almond No Sugars",
+    "brand": "Alpro",
+    "type": "Almond",
+    "chilled": false,
+    "url": "https://www.alpro.com/uk/products/drinks/almond-drinks/organic-almond-no-sugars/",
+    "image": "https://images.ctfassets.net/s64jgdakkdiy/YAy3UFzyhKRUnjMs759qE/1d7e9be8eadc654c8541c5aace1a16dd/webimage-0D772174-4DEF-48D3-9D6E8347361584D3.png?w=105&h=300&q=50&fm=webp&fit=pad",
+    "ingredients": {
+        "Water": true,
+        "Almond": true,
+        "Corn maltodextrin": true,
+        "Sea salt": true,
+        "Locust bean gum": true,
+        "Gellan gum": true,
+        "Natural flavouring": true,
+    },
+    "nutrition": {
+        "Energy": 15, // kcal
+        "Fat": 1.2, // g
+        "of which saturated": 0.1, // g
+        "Carbohydrates": 0, // g
+        "of which sugars": 0, // g
+        "Fibre": 0.2, // g
+        "Protein": 0.5, // g
+        "Salt": 0.14, // g
+        "Calcium": 9.8 // mg
     }
 }]
