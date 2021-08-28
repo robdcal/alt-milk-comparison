@@ -10,8 +10,21 @@ let currentMeasure;
 const filterButtons = document.querySelectorAll('#chart-filters button');
 filterButtons.forEach((obj, i) => {
   obj.addEventListener('click', event => {
+
+    if (event.target.getAttribute('data-active') === 'false') {
+      event.target.classList.remove("opacity-50")
+      event.target.classList.remove("bg-gray-300")
+      event.target.classList.add("bg-green-300")
+    } else {
+      event.target.classList.add("opacity-50")
+      event.target.classList.add("bg-gray-300")
+      event.target.classList.remove("bg-green-300")
+    }
+
     event.target.setAttribute('data-active', event.target.getAttribute('data-active') === 'true' ? 'false' : 'true');
+
     filterItems()
+
   });
 });
 
