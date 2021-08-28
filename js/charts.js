@@ -31,9 +31,7 @@ filterButtons.forEach((obj, i) => {
 const filterItems = () => { // any time a filter changes
 
   workingData = []
-  names = []
 
-  // get active filters
   const types = document.querySelectorAll('button[data-active="true"][data-filter="type"]')
   let typesArr = []
   types.forEach((obj, i) => {
@@ -50,9 +48,10 @@ const filterItems = () => { // any time a filter changes
   data.forEach((obj, i) => {
     if (typesArr.includes(obj.type) && brandsArr.includes(obj.brand)) {
       workingData.push(obj);
-      names.push(obj.name);
     }
   });
+
+  workingData.sort((a, b) => (a.name > b.name) ? 1 : ((b.name > a.name) ? -1 : 0))
 
   // update chart data with filtered workingData
   updateChartData()
@@ -62,10 +61,12 @@ const filterItems = () => { // any time a filter changes
 const updateChartData = () => {
 
   chartData = []
+  names = []
   images = []
 
   workingData.forEach((obj, i) => {
     chartData.push(obj.nutrition[currentTopic]);
+    names.push(obj.name);
     images.push(obj.image);
   });
 
