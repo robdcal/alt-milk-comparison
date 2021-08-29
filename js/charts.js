@@ -139,12 +139,12 @@ let nutritionChart = new Chart(ctx, {
 
         var image = new Image();
         image.src = images[index],
-          ctx.drawImage(image, x - 20, yAxis.bottom + 10, 40, 60);
+          ctx.drawImage(image, x - 10, yAxis.bottom + 10, 20, 30);
 
-        ctx.font = '10px "Segoe UI"';
+        ctx.font = '11px "Segoe UI"';
         ctx.translate(x, yAxis.bottom);
         ctx.rotate(270 * Math.PI / 180)
-        ctx.fillText(workingData[index].brand + ' - ' + workingData[index].type, 10, 3)
+        ctx.fillText(workingData[index].brand + ' - ' + workingData[index].type, 10, 4)
         ctx.setTransform(1, 0, 0, 1, 0, 0);
       });
 
