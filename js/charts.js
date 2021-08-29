@@ -67,7 +67,7 @@ const updateChartData = () => {
 
   workingData.forEach((obj, i) => {
     chartData.push(obj.nutrition[currentTopic]);
-    names.push(obj.name);
+    names.push(obj.brand + ' ' + obj.name);
     images.push(obj.image);
   });
 

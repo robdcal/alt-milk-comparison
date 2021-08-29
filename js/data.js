@@ -1,5 +1,5 @@
 const data = [{
-    "name": "Oatly Oat Drink",
+    "name": "Oat Drink",
     "brand": "Oatly",
     "type": "Oat",
     "chilled": false,
@@ -33,7 +33,7 @@ const data = [{
         "Iodine": 22.5 // µg
     }
 }, {
-    "name": "Oatly Oat Drink Barista Edition",
+    "name": "Oat Drink Barista Edition",
     "brand": "Oatly",
     "type": "Oat",
     "chilled": false,
@@ -67,7 +67,7 @@ const data = [{
         "Iodine": 22.5 // µg
     }
 }, {
-    "name": "Oatly Oat Drink Organic",
+    "name": "Oat Drink Organic",
     "brand": "Oatly",
     "type": "Oat",
     "chilled": false,
@@ -89,7 +89,7 @@ const data = [{
         "Salt": 0.11, // g
     }
 }, {
-    "name": "Oatly Oat Drink Chocolate",
+    "name": "Oat Drink Chocolate",
     "brand": "Oatly",
     "type": "Oat",
     "chilled": false,
@@ -126,7 +126,7 @@ const data = [{
         "Iodine": 22.5 // µg
     }
 }, {
-    "name": "Oatly Oat Drink Whole",
+    "name": "Oat Drink Whole",
     "brand": "Oatly",
     "type": "Oat",
     "chilled": true,
@@ -160,7 +160,7 @@ const data = [{
         "Iodine": 22.5 // µg
     }
 }, {
-    "name": "Oatly Oat Drink Semi",
+    "name": "Oat Drink Semi",
     "brand": "Oatly",
     "type": "Oat",
     "chilled": true,
@@ -194,7 +194,7 @@ const data = [{
         "Iodine": 22.5 // µg
     }
 }, {
-    "name": "Oatly Oat Drink Skinny",
+    "name": "Oat Drink Skinny",
     "brand": "Oatly",
     "type": "Oat",
     "chilled": true,
@@ -230,7 +230,7 @@ const data = [{
         "Iodine": 22.5 // µg
     }
 }, {
-    "name": "Oatly Oat Drink Chocolate Deluxe",
+    "name": "Oat Drink Chocolate Deluxe",
     "brand": "Oatly",
     "type": "Oat",
     "chilled": true,
@@ -267,7 +267,7 @@ const data = [{
         "Iodine": 22.5 // µg
     }
 }, {
-    "name": "Oatly Oat Drink Organic Semi",
+    "name": "Oat Drink Organic Semi",
     "brand": "Oatly",
     "type": "Oat",
     "chilled": true,
@@ -290,7 +290,7 @@ const data = [{
         "Salt": 0.10, // g
     }
 }, {
-    "name": "Alpro Oat Original",
+    "name": "Oat Original",
     "brand": "Alpro",
     "type": "Oat",
     "chilled": false,
@@ -323,7 +323,7 @@ const data = [{
         "Calcium": 120 // mg
     }
 }, {
-    "name": "Alpro Oat No Sugars",
+    "name": "Oat No Sugars",
     "brand": "Alpro",
     "type": "Oat",
     "chilled": false,
@@ -356,7 +356,7 @@ const data = [{
         "Calcium": 120 // mg
     }
 }, {
-    "name": "Alpro Oat Chocolate",
+    "name": "Oat Chocolate",
     "brand": "Alpro",
     "type": "Oat",
     "chilled": false,
@@ -391,7 +391,7 @@ const data = [{
         "Calcium": 120 // mg
     }
 }, {
-    "name": "Alpro Oat Original Chilled",
+    "name": "Oat Original Chilled",
     "brand": "Alpro",
     "type": "Oat",
     "chilled": true,
@@ -424,7 +424,7 @@ const data = [{
         "Calcium": 120 // mg
     }
 }, {
-    "name": "Alpro Oat No Sugars Chilled",
+    "name": "Oat No Sugars Chilled",
     "brand": "Alpro",
     "type": "Oat",
     "chilled": true,
@@ -457,7 +457,7 @@ const data = [{
         "Calcium": 120 // mg
     }
 }, {
-    "name": "Alpro Almond Unroasted No Sugars",
+    "name": "Almond Unroasted No Sugars",
     "brand": "Alpro",
     "type": "Almond",
     "chilled": false,
@@ -493,7 +493,7 @@ const data = [{
         "Calcium": 120 // mg
     }
 }, {
-    "name": "Alpro Almond Roasted No Sugars",
+    "name": "Almond Roasted No Sugars",
     "brand": "Alpro",
     "type": "Almond",
     "chilled": false,
@@ -529,7 +529,7 @@ const data = [{
         "Calcium": 120 // mg
     }
 }, {
-    "name": "Alpro Almond Original",
+    "name": "Almond Original",
     "brand": "Alpro",
     "type": "Almond",
     "chilled": false,
@@ -567,7 +567,7 @@ const data = [{
         "Calcium": 120 // mg
     }
 }, {
-    "name": "Alpro Almond Original Chilled",
+    "name": "Almond Original Chilled",
     "brand": "Alpro",
     "type": "Almond",
     "chilled": true,
@@ -605,7 +605,7 @@ const data = [{
         "Calcium": 120 // mg
     }
 }, {
-    "name": "Alpro Caramelised Almond",
+    "name": "Caramelised Almond",
     "brand": "Alpro",
     "type": "Almond",
     "chilled": false,
@@ -642,7 +642,7 @@ const data = [{
         "Calcium": 120 // mg
     }
 }, {
-    "name": "Alpro Almond Dark Chocolate",
+    "name": "Almond Dark Chocolate",
     "brand": "Alpro",
     "type": "Almond",
     "chilled": false,
@@ -679,7 +679,7 @@ const data = [{
         "Calcium": 120 // mg
     }
 }, {
-    "name": "Alpro Organic Almond No Sugars",
+    "name": "Organic Almond No Sugars",
     "brand": "Alpro",
     "type": "Almond",
     "chilled": false,
