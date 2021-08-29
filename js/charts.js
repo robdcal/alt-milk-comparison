@@ -51,7 +51,8 @@ const filterItems = () => { // any time a filter changes
     }
   });
 
-  workingData.sort((a, b) => (a.name > b.name) ? 1 : ((b.name > a.name) ? -1 : 0))
+  workingData.sort((a, b) => (a.type > b.type) ? 1 : ((b.type > a.type) ? -1 : 0))
+  workingData.sort((a, b) => (a.brand > b.brand) ? 1 : ((b.brand > a.brand) ? -1 : 0))
 
   // update chart data with filtered workingData
   updateChartData()
@@ -70,15 +71,15 @@ const updateChartData = () => {
     images.push(obj.image);
   });
 
-  myChart.data.datasets[0].data = chartData;
-  myChart.data.labels = names;
-  myChart.options.title.text = currentTopic + " (" + currentMeasure + ")";
-  myChart.update();
+  nutritionChart.data.datasets[0].data = chartData;
+  nutritionChart.data.labels = names;
+  nutritionChart.options.title.text = currentTopic + " (" + currentMeasure + ")";
+  nutritionChart.update();
 
 }
 
-const ctx = document.getElementById("myChart").getContext("2d");
-let myChart = new Chart(ctx, {
+const ctx = document.getElementById("nutrition-chart").getContext("2d");
+let nutritionChart = new Chart(ctx, {
   type: "bar",
   data: {
     labels: names,
