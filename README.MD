@@ -1,13 +1,18 @@
+A nutritional comparison of the different alt milks on offer.
+
 To Do
-- Make ingredient naming consistent
-- Add remaining oat drinks
-- Add other alt milks
-- Add remaining topic sections
-- Add summary table / heatmap? or averages per brand and per type?
-- Add ingredients section (table with ticks, tooltip to learn about ingredient)
-- Add content to sections
+
+- Compare X vs Y, select each for comparison
+- Remove brand names from name field and add dynamically to label
+- Add page navigation (highlight active)
+- Add icons (type) to each chart item
+- Colour bars by brand?
+- Convert ingredients object into array
+- Add more alt milks
+- Cater for mixed milks (i.e. Alpro coconut & almond)
 - Resize images, put in S3 bucket, update URLs in data
 - Improve overall styling
+- Add content to sections (from Wikipedia?)
 - Optimise for mobile experience
-- Add "How it's built" mode with annotations
-- Move data to database (e.g. Firebase)?
+- Add ingredients section (table with ticks, tooltip to learn about ingredient)
+- Compare types of milk by average figure of specific nutritional element (bar chart with nutrition selector, only one active at a time) - exclude chocolate/etc? "Which is the healthist milk?"

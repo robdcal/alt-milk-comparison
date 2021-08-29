@@ -25,6 +25,10 @@
 
   </div>
 
+  <div class="mx-auto bg-gray-300 sticky top-0 text-center">
+    <p>Page navigation</p>
+  </div>
+
   <div class="grid grid-cols-12">
 
     <div class="col-span-6 p-36 bg-green-100">
@@ -158,10 +162,38 @@
               data-filter="brand" data-filter-item="Oatly" data-active="true">Oatly</button>
           </div>
         </div>
-        <canvas id="myChart" width="400" height="400"></canvas>
+        <canvas id="nutrition-chart" width="400" height="400"></canvas>
       </div>
     </div>
 
+  </div>
+
+  <div class="grid grid-cols-12 text-center">
+    <div class="col-span-3 bg-green-100 p-12">
+      <p>Compare</p>
+      <select>
+        <option>1</option>
+      </select>
+      <h3 class="text-4xl font-thin">Name of milk</h3>
+      <img
+        src="https://www.oatly.com/uploads/attachments/ckovii71j08qybvgieexxu7xx-61622-barista-uk-right-tp-brik-edge-1l-v029.one-half.jpg"
+        alt="" />
+    </div>
+    <div class="col-span-6 bg-gray-100 p-12">
+      <h2 class="text-6xl font-thin">Alt Milk vs. Alt Milk</h2>
+      <canvas id="comparison-chart" width="400" height="400"></canvas>
+    </div>
+    <div class="col-span-3 bg-green-100 p-12">
+      <p>Compare</p>
+      <select>
+        <option>1</option>
+      </select>
+      <h3 class="text-4xl font-thin">Name of milk</h3>
+      <img
+        src="https://www.oatly.com/uploads/attachments/ckc4vvoq401vk1kgi0phxaes6-61798-oatdrink-organic-uk-right-ip-gabletop-1000ml-v021.one-half.jpg"
+        alt="" />
+
+    </div>
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
