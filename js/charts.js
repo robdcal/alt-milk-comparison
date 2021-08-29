@@ -133,12 +133,21 @@ let nutritionChart = new Chart(ctx, {
       var ctx = chart.chart.ctx;
       var xAxis = chart.scales['x-axis-0'];
       var yAxis = chart.scales['y-axis-0'];
+
       xAxis.ticks.forEach((value, index) => {
         var x = xAxis.getPixelForTick(index);
+
         var image = new Image();
         image.src = images[index],
           ctx.drawImage(image, x - 20, yAxis.bottom + 10, 40, 60);
+
+        ctx.font = '10px "Segoe UI"';
+        ctx.translate(x, yAxis.bottom);
+        ctx.rotate(270 * Math.PI / 180)
+        ctx.fillText(workingData[index].brand + ' - ' + workingData[index].type, 10, 3)
+        ctx.setTransform(1, 0, 0, 1, 0, 0);
       });
+
     }
   }],
 });
