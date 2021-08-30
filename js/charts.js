@@ -1,7 +1,6 @@
-let names = [];
-let chartData = []
-let chartTitle = ''
-let images = [];
+let nutritionName = [];
+let nutritionChartData = []
+let nutritionImages = [];
 let workingData = data
 let currentTopic;
 let currentMeasure;
@@ -62,27 +61,27 @@ const filterItems = () => {
   workingData.sort((a, b) => (a.brand > b.brand) ? 1 : ((b.brand > a.brand) ? -1 : 0))
 
   // update chart data with filtered workingData
-  updateChartData()
+  updateNutritionChartData()
 
 }
 
 // Trigger a chart update
-const updateChartData = () => {
+const updateNutritionChartData = () => {
 
-  chartData = []
-  names = []
-  images = []
+  nutritionChartData = []
+  nutritionName = []
+  nutritionImages = []
 
   // for each of the items in the fitlered workingData array, push detaisl to separate arrays for the different parts of the chart
   workingData.forEach((obj, i) => {
-    chartData.push(obj.nutrition[currentTopic]);
-    names.push(obj.brand + ' ' + obj.name);
-    images.push(obj.image);
+    nutritionChartData.push(obj.nutrition[currentTopic]);
+    nutritionName.push(obj.brand + ' ' + obj.name);
+    nutritionImages.push(obj.image);
   });
 
   // set the chart details
-  nutritionChart.data.datasets[0].data = chartData;
-  nutritionChart.data.labels = names;
+  nutritionChart.data.datasets[0].data = nutritionChartData;
+  nutritionChart.data.labels = nutritionName;
   nutritionChart.options.title.text = currentTopic + " (" + currentMeasure + ")";
 
   // trigger a chart update
@@ -90,14 +89,14 @@ const updateChartData = () => {
 
 }
 
-const ctx = document.getElementById("nutrition-chart").getContext("2d");
-let nutritionChart = new Chart(ctx, {
+const nutritionCtx = document.getElementById("nutrition-chart").getContext("2d");
+let nutritionChart = new Chart(nutritionCtx, {
   type: "bar",
   data: {
-    labels: names,
+    labels: nutritionName,
     datasets: [{
       label: "# of Votes",
-      data: chartData,
+      data: nutritionChartData,
       backgroundColor: [],
       borderColor: [],
       borderWidth: 1,
@@ -150,7 +149,7 @@ let nutritionChart = new Chart(ctx, {
         var x = xAxis.getPixelForTick(index);
 
         var image = new Image();
-        image.src = images[index],
+        image.src = nutritionImages[index],
           ctx.drawImage(image, x - 10, yAxis.bottom + 10, 20, 30);
 
         ctx.font = '11px "Segoe UI"';

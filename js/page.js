@@ -11,7 +11,7 @@ function observerCallback(entries, observer) {
             // console.log(entry)
             currentTopic = entry.target.dataset.topic;
             currentMeasure = entry.target.dataset.measure;
-            updateChartData(currentTopic, currentMeasure)
+            updateNutritionChartData(currentTopic, currentMeasure)
         }
     });
 };
