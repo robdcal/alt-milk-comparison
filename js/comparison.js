@@ -9,8 +9,8 @@ const imageRight = document.getElementById('compare-right-image')
 let comparisonLabels = []
 let comparisonChartDataLeft = []
 let comparisonChartDataRight = []
-let datasetLabelLeft = ''
-let datasetLabelRight = ''
+let comparisonDatasetLabelLeft = ''
+let comparisonDatasetLabelRight = ''
 
 const populateComparisonSelects = () => {
     // sort the array
@@ -65,8 +65,8 @@ const updateComparisonChartData = () => {
     comparisonLabels = []
     comparisonChartDataLeft = []
     comparisonChartDataRight = []
-    datasetLabelLeft = ''
-    datasetLabelRight = ''
+    comparisonDatasetLabelLeft = ''
+    comparisonDatasetLabelRight = ''
 
     // build an array (comparisonLabels) of all the unique nutrition items between the two selected options
     for (const select of selects) {
@@ -129,13 +129,13 @@ let comparisonChart = new Chart(comparisonCtx, {
     data: {
         labels: comparisonLabels,
         datasets: [{
-            label: datasetLabelLeft,
+            label: comparisonDatasetLabelLeft,
             data: comparisonChartDataLeft,
             backgroundColor: ['red'],
             borderColor: [],
             borderWidth: 1,
         }, {
-            label: datasetLabelRight,
+            label: comparisonDatasetLabelRight,
             data: comparisonChartDataRight,
             backgroundColor: ['blue'],
             borderColor: [],
