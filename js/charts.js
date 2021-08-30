@@ -51,7 +51,7 @@ const filterItems = () => {
 
   // push matching items into workingData array from data array based on filters
   data.forEach((obj, i) => {
-    if (typesArr.includes(obj.type) && brandsArr.includes(obj.brand)) {
+    if (typesArr.some(item => obj.type.includes(item)) && brandsArr.includes(obj.brand)) {
       workingData.push(obj);
     }
   });
