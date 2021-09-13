@@ -5,8 +5,10 @@ const titleLeft = document.getElementById('compare-left-title')
 const titleRight = document.getElementById('compare-right-title')
 const imageLeft = document.getElementById('compare-left-image')
 const imageRight = document.getElementById('compare-right-image')
+const comparisonChartTitleLeft = document.getElementById('comparison-chart-title-left')
+const comparisonChartTitleRight = document.getElementById('comparison-chart-title-right')
 
-let comparisonLabels = []
+let comparisonLabels = ["Energy", "Fat", "of which saturated", "Carbohydrates", "of which sugars", "Fibre", "Protein", "Salt"]
 let comparisonChartDataLeft = []
 let comparisonChartDataRight = []
 let comparisonDatasetLabelLeft = ''
@@ -50,7 +52,8 @@ const populateSelectedItem = (select, option) => {
     const selectedOption = select.options[select.selectedIndex]
 
     // set the title with the brand+name of product
-    select.getAttribute('id') === 'compare-left-select' ? titleLeft.innerHTML = selectedOption.value : titleRight.innerHTML = selectedOption.value
+    select.getAttribute('id') === 'compare-left-select' ? comparisonChartTitleLeft.innerHTML = selectedOption.value : comparisonChartTitleRight.innerHTML = selectedOption.value
+
 
     // set the image
     data.forEach((obj, i) => {
@@ -62,25 +65,25 @@ const populateSelectedItem = (select, option) => {
 }
 
 const updateComparisonChartData = () => {
-    comparisonLabels = []
+    // comparisonLabels = []
     comparisonChartDataLeft = []
     comparisonChartDataRight = []
     comparisonDatasetLabelLeft = ''
     comparisonDatasetLabelRight = ''
 
     // build an array (comparisonLabels) of all the unique nutrition items between the two selected options
-    for (const select of selects) {
-        data.forEach((obj, i) => {
-            if (obj.brand === select.options[select.selectedIndex].getAttribute('data-brand') && obj.name === select.options[select.selectedIndex].getAttribute('data-name')) {
-                for (const key in obj.nutrition) {
-                    comparisonLabels.push(key)
-                }
-            }
-        });
-    }
+    // for (const select of selects) {
+    //     data.forEach((obj, i) => {
+    //         if (obj.brand === select.options[select.selectedIndex].getAttribute('data-brand') && obj.name === select.options[select.selectedIndex].getAttribute('data-name')) {
+    //             for (const key in obj.nutrition) {
+    //                 comparisonLabels.push(key)
+    //             }
+    //         }
+    //     });
+    // }
 
-    const uniques = new Set(comparisonLabels)
-    comparisonLabels = [...uniques]
+    // const uniques = new Set(comparisonLabels)
+    // comparisonLabels = [...uniques]
 
     // set comparisonChartDataLeft and Right
     for (const select of selects) {
