@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <link href="/css/tailwind.css" rel="stylesheet" />
+  <link href="/css/custom.css" rel="stylesheet" />
 
   <title>Hello, world!</title>
 </head>
@@ -25,14 +26,28 @@
 
   </div>
 
-  <div class="mx-auto bg-gray-300 sticky top-0 text-center">
-    <p>Page navigation</p>
+  <div id="nav" class="mx-auto py-3 bg-gray-300 sticky top-0 text-center z-10">
+    <span>Jump to...</span>
+    <a class="py-2 px-3 no-underline text-white text-sm hover:text-white focus:outline-none active:shadow-none mr-2 opacity-50"
+      href="#nutr-energy" data-target="nutr-energy" data-active="false">Energy</a>
+    <a class="py-2 px-3 no-underline text-white text-sm hover:text-white focus:outline-none active:shadow-none mr-2 opacity-50"
+      href="#nutr-fat" data-target="nutr-fat" data-active="false">Fat</a>
+    <a class="py-2 px-3 no-underline text-white text-sm hover:text-white focus:outline-none active:shadow-none mr-2 opacity-50"
+      href="#nutr-carbohydrates" data-target="nutr-carbohydrates" data-active="false">Carbohydrates</a>
+    <a class="py-2 px-3 no-underline text-white text-sm hover:text-white focus:outline-none active:shadow-none mr-2 opacity-50"
+      href="#nutr-fibre" data-target="nutr-fibre" data-active="false">Fibre</a>
+    <a class="py-2 px-3 no-underline text-white text-sm hover:text-white focus:outline-none active:shadow-none mr-2 opacity-50"
+      href="#nutr-protein" data-target="nutr-protein" data-active="false">Protein</a>
+    <a class="py-2 px-3 no-underline text-white text-sm hover:text-white focus:outline-none active:shadow-none mr-2 opacity-50"
+      href="#nutr-salt" data-target="nutr-salt" data-active="false">Salt</a>
+    <a class="py-2 px-3 no-underline text-white text-sm hover:text-white focus:outline-none active:shadow-none mr-2 opacity-50"
+      href="#nutr-calcium" data-target="nutr-calcium" data-active="false">Calcium</a>
   </div>
 
   <div class="grid grid-cols-12">
 
     <div class="col-span-6 p-36 bg-green-100">
-      <div id="nutr-energy" class="chart-section my-60" data-topic="Energy" data-measure="kcal">
+      <div id="nutr-energy" class="chart-section py-60" data-topic="Energy" data-measure="kcal">
         <h2 class="text-6xl font-light pb-4">Energy</h2>
         <p class="text-2xl font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
           incididunt
@@ -46,7 +61,7 @@
           occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </div>
       <hr>
-      <div id="nutr-fat" class="chart-section my-60" data-topic="Fat" data-measure="g">
+      <div id="nutr-fat" class="chart-section py-60" data-topic="Fat" data-measure="g">
         <h2 class="text-6xl font-light pb-4">Fat</h2>
         <p class="text-2xl font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
           incididunt
@@ -60,7 +75,7 @@
           occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </div>
       <hr>
-      <div id="nutr-carbohydrates" class="chart-section my-60" data-topic="Carbohydrates" data-measure="g">
+      <div id="nutr-carbohydrates" class="chart-section py-60" data-topic="Carbohydrates" data-measure="g">
         <h2 class="text-6xl font-light pb-4">Carbohydrates</h2>
         <p class="text-2xl font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
           incididunt
@@ -74,7 +89,7 @@
           occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </div>
       <hr>
-      <div id="nutr-fibre" class="chart-section my-60" data-topic="Fibre" data-measure="g">
+      <div id="nutr-fibre" class="chart-section py-60" data-topic="Fibre" data-measure="g">
         <h2 class="text-6xl font-light pb-4">Fibre</h2>
         <p class="text-2xl font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
           incididunt
@@ -88,7 +103,7 @@
           occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </div>
       <hr>
-      <div id="nutr-protein" class="chart-section my-60" data-topic="Protein" data-measure="g">
+      <div id="nutr-protein" class="chart-section py-60" data-topic="Protein" data-measure="g">
         <h2 class="text-6xl font-light pb-4">Protein</h2>
         <p class="text-2xl font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
           incididunt
@@ -102,7 +117,7 @@
           occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </div>
       <hr>
-      <div id="nutr-salt" class="chart-section my-60" data-topic="Salt" data-measure="g">
+      <div id="nutr-salt" class="chart-section py-60" data-topic="Salt" data-measure="g">
         <h2 class="text-6xl font-light pb-4">Salt</h2>
         <p class="text-2xl font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
           incididunt
@@ -116,7 +131,7 @@
           occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </div>
       <hr>
-      <div id="nutr-calcium" class="chart-section my-60" data-topic="Calcium" data-measure="g">
+      <div id="nutr-calcium" class="chart-section py-60" data-topic="Calcium" data-measure="g">
         <h2 class="text-6xl font-light pb-4">Calcium</h2>
         <p class="text-2xl font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
           incididunt
@@ -205,6 +220,7 @@
   <script type="text/javascript" src="/js/nutrition.js"></script>
   <script type="text/javascript" src="/js/page.js"></script>
   <script type="text/javascript" src="/js/comparison.js"></script>
+  <script type="text/javascript" src="/js/nav.js"></script>
 
 </body>
 
