@@ -8,7 +8,7 @@ const imageRight = document.getElementById('compare-right-image')
 const comparisonChartTitleLeft = document.getElementById('comparison-chart-title-left')
 const comparisonChartTitleRight = document.getElementById('comparison-chart-title-right')
 
-let comparisonLabels = ["Energy", "Fat", "of which saturated", "Carbohydrates", "of which sugars", "Fibre", "Protein", "Salt"]
+let comparisonLabels = ["Fat", "of which saturated", "Carbohydrates", "of which sugars", "Fibre", "Protein", "Salt"]
 let comparisonChartDataLeft = []
 let comparisonChartDataRight = []
 let comparisonDatasetLabelLeft = ''
@@ -134,15 +134,11 @@ let comparisonChart = new Chart(comparisonCtx, {
         datasets: [{
             label: comparisonDatasetLabelLeft,
             data: comparisonChartDataLeft,
-            backgroundColor: ['red'],
-            borderColor: [],
-            borderWidth: 1,
+            backgroundColor: ['red', 'red', 'red', 'red', 'red', 'red', 'red'],
         }, {
             label: comparisonDatasetLabelRight,
             data: comparisonChartDataRight,
-            backgroundColor: ['blue'],
-            borderColor: [],
-            borderWidth: 1,
+            backgroundColor: ['blue', 'blue', 'blue', 'blue', 'blue', 'blue', 'blue'],
         }],
     },
     options: {
@@ -168,9 +164,7 @@ let comparisonChart = new Chart(comparisonCtx, {
             }]
         },
         title: {
-            display: false,
-            text: 'Custom Chart Title',
-            fontSize: 18
+            display: false
         },
         legend: {
             display: false
