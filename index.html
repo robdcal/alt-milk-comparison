@@ -8,7 +8,7 @@
   <link href="/css/tailwind.css" rel="stylesheet" />
   <link href="/css/custom.css" rel="stylesheet" />
 
-  <title>Hello, world!</title>
+  <title>Alt milk comparison</title>
 </head>
 
 <body>
@@ -40,8 +40,10 @@
       href="#nutr-protein" data-target="nutr-protein" data-active="false">Protein</a>
     <a class="py-2 px-3 no-underline text-white text-sm hover:text-white focus:outline-none active:shadow-none mr-2 opacity-50"
       href="#nutr-salt" data-target="nutr-salt" data-active="false">Salt</a>
-    <a class="py-2 px-3 no-underline text-white text-sm hover:text-white focus:outline-none active:shadow-none mr-2 opacity-50"
+    <a class="py-2 px-3 no-underline text-white text-sm hover:text-white focus:outline-none active:shadow-none mr-10 opacity-50"
       href="#nutr-calcium" data-target="nutr-calcium" data-active="false">Calcium</a>
+    <a class="py-2 px-3 no-underline text-white text-sm hover:text-white focus:outline-none active:shadow-none mr-2 opacity-50"
+      href="#direct-comparison" data-target="direct-comparison" data-active="false">Direct Comparison</a>
   </div>
 
   <div class="grid grid-cols-12">
@@ -189,7 +191,7 @@
 
   </div>
 
-  <div class="grid grid-cols-12 text-center">
+  <div id="direct-comparison" class="grid grid-cols-12 text-center chart-section">
     <div class="col-span-3 bg-green-100 p-12">
       <select id="compare-left-select">
       </select>
