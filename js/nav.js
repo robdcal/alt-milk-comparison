@@ -9,9 +9,7 @@ function observerNavCallback(entries, observerNav) {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             currentId = entry.target.id;
-            updateNav(currentId).then(function () {
-                // history.pushState(null, null, `#${currentId}`);
-            })
+            updateNav(currentId)
         }
     });
 };
@@ -30,7 +28,6 @@ function updateNav(id) {
     let navTarget = document.querySelector(`[data-target=${id}`)
 
     // add/remove classes to display active/inactive + toggle data-active value
-    // return new Promise(function (resolve, reject) {
     for (const link of navLinks) {
         if (link.getAttribute('data-active') === 'false' && link === navTarget) {
             link.classList.remove("opacity-50")
@@ -44,8 +41,5 @@ function updateNav(id) {
     }
     navTarget.setAttribute('data-active', 'true');
     history.replaceState(null, null, `#${currentId}`);
-
-    // resolve()
-    // })
 
 }
