@@ -3,8 +3,8 @@ A nutritional comparison of the different alt milks on offer.
 To Do
 
 - Improve overall styling
-- Scrape final alt milks
 - Add content to sections (from Wikipedia?)
+- Scrape final alt milks
 - Resize & standardise images, put in S3 bucket, update URLs in data
 - Update meta (title tag, etc)
 - Optimise for mobile experience
