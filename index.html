@@ -5,8 +5,8 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <link href="/css/tailwind.css" rel="stylesheet" />
-  <link href="/css/custom.css" rel="stylesheet" />
+  <link href="css/tailwind.css" rel="stylesheet" />
+  <link href="css/custom.css" rel="stylesheet" />
 
   <title>Alt milk comparison</title>
 </head>
@@ -14,13 +14,21 @@
 <body>
   <div class="container mx-auto my-12">
 
-    <div class="grid grid-cols-12 gap-4">
-      <div class="col-start-3 col-span-8 text-center">
+    <div class="grid grid-cols-12">
+      <div class="col-start-3 col-span-8 my-10 p-10 text-center border-8 border-black">
         <h1 class="text-6xl pb-4">Alt Milk Comparison</h1>
-        <p class="text-2xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-          labore et dolore
-          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat.</p>
+        <p class="text-2xl">Over the last few years, the popularity of alt milks such as oat milk has gone through the
+          roof
+          (see <a class="underline" href="https://trends.google.com/trends/explore?date=all&q=oat%20milk"
+            target="_blank">Google
+            Trends</a>), likely due to increasing concerns around the environmental impact of dairy farming and a rise
+          in veganism.</p>
+        <br>
+        <p class="text-2xl">But are alt milks healthy? Which type of alt milk is the healthiest?
+        </p>
+        <br>
+        <p class="text-2xl">Explore below!
+        </p>
       </div>
     </div>
 
@@ -51,16 +59,7 @@
     <div class="col-span-6 p-36 bg-green-100">
       <div id="nutr-energy" class="chart-section py-60" data-topic="Energy" data-measure="kcal">
         <h2 class="text-6xl font-light pb-4">Energy</h2>
-        <p class="text-2xl font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-          incididunt
-          ut
-          labore et dolore
-          magna
-          aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis
-          aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-          sint
-          occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p class="text-2xl font-light">Energy, measured here in kcal (kilocalories), is...</p>
       </div>
       <hr>
       <div id="nutr-fat" class="chart-section py-60" data-topic="Fat" data-measure="g">
@@ -218,11 +217,11 @@
 
   <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
 
-  <script type="text/javascript" src="/js/data.js"></script>
-  <script type="text/javascript" src="/js/nutrition.js"></script>
-  <script type="text/javascript" src="/js/page.js"></script>
-  <script type="text/javascript" src="/js/comparison.js"></script>
-  <script type="text/javascript" src="/js/nav.js"></script>
+  <script type="text/javascript" src="js/data.js"></script>
+  <script type="text/javascript" src="js/nutrition.js"></script>
+  <script type="text/javascript" src="js/page.js"></script>
+  <script type="text/javascript" src="js/comparison.js"></script>
+  <script type="text/javascript" src="js/nav.js"></script>
 
 </body>
 
